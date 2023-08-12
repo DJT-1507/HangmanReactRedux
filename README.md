@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# About this app
+This app was created with React using Redux for global state management. It was created as part of my studies, learning Full Stack Website Development with HyperionDev. Over time, as my knowledge increases I plan to make updates to this.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This game was developed with a very simple UI making use of the Bootstrap framework - meaning it is also responsive. 
 
-## Available Scripts
+There are 50 random words in the array in ```src/components/Words.jsx``` - feel free to add more but make sure you update line 28 of ```src/components/StartNewGame.jsx``` to reflect the new number of words you now have!
 
-In the project directory, you can run:
+The UI will automatically change if the word is guessed correctly/you have run out of guesses.
 
-### `npm start`
+## How to install
+Open your command line and navigate to where you would like the files located. Once there enter the following into the command line:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. ```mkdir HangmanGame```
+2. ```cd HangmanGame```
+3. ```git clone https://github.com/DJT-1507/HangmanReactRedux.git```
+4. ```cd HangmanReactRedux```
+5. ```npm i```
+6. ```npm start```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Once you have completed all of these steps, the web app should open automatically in your web browser and you will be able to play the game!
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### The game
+The aim of the game is to correctly guess all of the letters of a randomly chosen word, before you run out of chances and the Hangman is fully drawn!
