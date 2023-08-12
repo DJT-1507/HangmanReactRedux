@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+//import useSelector so we can get the gameState value
+import { useSelector } from "react-redux";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//import jsx components
+import StartNewGame from "./components/StartNewGame";
+import GameInPlay from "./components/GameInPlay";
+import GameWon from "./components/GameWon";
+import GameLost from "./components/GameLost";
+
+//using and if/else if/else code block we can display different components to the user depending on the gameState value
+const App = () => {
+    const gameState = useSelector((state) => state.gameState.value);
+
+    if (gameState === "not-started") {
+        return (
+            <>
+                <StartNewGame />
+            </>
+        );
+    } else if (gameState === "game-won") {
+        return (
+            <>
+                <GameWon />
+            </>
+        );
+    } else if (gameState === "game-lost") {
+        return (
+            <>
+                <GameLost />
+            </>
+        );
+    } else {
+        return (
+            <>
+                <GameInPlay />
+            </>
+        );
+    }
 }
 
 export default App;

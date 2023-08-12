@@ -1,0 +1,29 @@
+/* some basic CSS styles in addition to the Bootstrap styling */
+h1 {
+    margin: 0;
+    padding: 0;
+}
+#helpPopup {
+    /*the combination of position, top and transform make sure that the pop up is always in the center of the page, with
+    z-index putting it on top of all other elements*/
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ECECEC;
+    z-index: 1;
+}
+.wordArea {
+    background-color: #ECECEC;
+    border-radius: 10px;
+}
+.letterDisplay {
+    display: inline-block;
+    min-width: 2.5rem;
+    height: 4rem;
+    font-size: 3rem;
+    margin: 0 0.25rem 0 0;
+    padding: 0;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
