@@ -10,12 +10,10 @@ The UI will automatically change if the word is guessed correctly/you have run o
 ## How to install
 Open your command line and navigate to where you would like the files located. Once there enter the following into the command line:
 
-1. ```mkdir HangmanGame```
-2. ```cd HangmanGame```
-3. ```git clone https://github.com/DJT-1507/HangmanReactRedux.git```
-4. ```cd HangmanReactRedux```
-5. ```npm i```
-6. ```npm start```
+1. ```git clone https://github.com/DJT-1507/HangmanReactRedux.git```
+2. ```cd HangmanReactRedux```
+3. ```npm i```
+4. ```npm start```
 
 Once you have completed all of these steps, the web app should open automatically in your web browser and you will be able to play the game!
 
